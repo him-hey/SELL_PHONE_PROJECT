@@ -24,7 +24,7 @@
                     <img src="{{$product->product_img}}" alt="product image" style="width: 150px; height:100px">
                 </td>
                 <td>{{$product->product_name}}</td>
-                <td>{{$product->product_price}}</td>
+                <td>${{$product->product_price}}</td>
                 <td>{{$product->product_des}}</td>
                 <td>
                     <div class="row">

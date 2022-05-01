@@ -17,19 +17,22 @@ class ProductSeeder extends Seeder
         $data = [
             // products
             [
-                'product_name' => 'product1',
+                'product_name' => 'Iphone',
                 'product_price' => 1000,
+                'category_id' => 1,
                 'product_img' => 'images/software1.jpeg',
                 'product_des' => 'This is my description',
             ],
             [
-                'product_name' => 'product2',
+                'product_name' => 'Bookmac',
+                'category_id' => 1,
                 'product_price' => 1000,
                 'product_img' => 'images/software2.png',
                 'product_des' => 'This is my description',
             ],
             [
-                'product_name' => 'product3',
+                'product_name' => 'Tablate',
+                'category_id' => 1,
                 'product_price' => 1000,
                 'product_img' => 'images/software3.jpeg',
                 'product_des' => 'This is my description',
