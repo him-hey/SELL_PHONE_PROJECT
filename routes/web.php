@@ -37,9 +37,9 @@ Route::get('/category', [App\Http\Controllers\CategoryController::class, 'index'
 Route::prefix('categories')->group(function () {
     Route::get('create', [App\Http\Controllers\CategoryController::class, 'create'])->name('categories.create');
     Route::post('store', [App\Http\Controllers\CategoryController::class, 'store'])->name('categories.store');
-    Route::get('{id}/edit', [App\Http\Controllers\CategoryController::class, 'edit'])->name('edit');
-    Route::patch('{id}/update', [App\Http\Controllers\CategoryController::class, 'update'])->name('update');
-    Route::delete('/destroy/{id}', [\App\Http\Controllers\CategoryController::class, 'destroy'])->name('destroy');
+    Route::get('{id}/edit', [App\Http\Controllers\CategoryController::class, 'edit'])->name('categories.edit');
+    Route::patch('{id}/update', [App\Http\Controllers\CategoryController::class, 'update'])->name('categories.update');
+    Route::delete('/destroy/{id}', [\App\Http\Controllers\CategoryController::class, 'destroy'])->name('categories.destroy');
 });
 // Product route
 Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('product');

@@ -20,10 +20,10 @@
                 <td>
                     <div class="row">
                         <div class="col" style="margin-right:-80%">
-                            <a class ="btn btn-warning" href="{{route('edit', $category->id)}}">Edit</a>
+                            <a class ="btn btn-warning" href="{{route('categories.edit', $category->id)}}">Edit</a>
                         </div>
                         <div class="col">
-                            <form action="{{ route('destroy' , $category->id) }}" method="post">
+                            <form action="{{ route('categories.destroy' , $category->id) }}" method="post">
                                 @csrf
                                 {{method_field('DELETE')}}
                                 <button type="submit" class="btn btn-danger save-cancel" name="confirm_delete">delete</button>
